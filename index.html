@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div>
+      <div class="profile">
+        <img src="/me.jpg" alt="Profile Picture" />
+        <h3>ALI SABET EGHLIDI</h3>
+      </div>
+      <div class="links">
+        <button onclick="toggleDropdown('drop1')"><i class="fas fa-layer-group"></i> Portfolio</button>
+        <div class="dropdown" id="drop1">
+          <a href="#about">About Me</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <button onclick="toggleDropdown('drop2')"><i class="fas fa-gear"></i> Settings</button>
+        <div class="dropdown" id="drop2">
+          <a href="#">Profile</a>
+          <a href="#">Theme</a>
+        </div>
+        <button onclick="toggleDropdown('drop3')"><i class="fas fa-file"></i> Resume</button>
+        <div class="dropdown" id="drop3">
+          <a href="#">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="menu-btn" onclick="toggleSidebar()" id="menuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()">
+      <i class="fas fa-adjust"></i>
+      <i>Darkmode</i>
+    </button>
+  </div>
+
+  <div class="content" id="content">
+    <section id="about">
+      <h2>About Me</h2>
+
+        <p>Hello! I'm <strong>Ali Sabet Eghlidi</strong>, a passionate web developer with a deep love for technology, design, and innovation. Ever since I can remember, I've been fascinated by how things work — from the smallest piece of code to entire systems that power the web. This natural curiosity led me into the world of programming, where creativity meets logic in the most exciting ways.</p>
+  
+        <p>I specialize in crafting clean, efficient, and user-friendly websites, with a strong focus on delivering seamless digital experiences. I enjoy working across both frontend and backend technologies, always aiming to create solutions that are not only functional but also visually appealing and intuitive.</p>
+        
+        <p>Beyond coding, I have a growing interest in areas like artificial intelligence, machine learning, and DevOps. I believe that staying curious and constantly learning are the keys to long-term growth and success in the tech industry.</p>
+      
+        <p>When I'm not coding, you'll often find me exploring new tools and frameworks, improving my skills, or brainstorming creative ideas for future projects. I thrive in environments where innovation, collaboration, and passion for technology come together.</p>
+        
+        <p>I'm always open to new challenges, exciting collaborations, and meaningful conversations. Feel free to reach out — I'd love to connect!</p>
+      </section>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>I created a project that scrapes data from TrueCar and predicts car prices using machine learning.</p>
+      <a href="https://github.com/aliesabet/web-scraping">Car Price Prediction</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me via email at <strong>alisabet13@yahoo.com</strong> or GitHub at <strong>https://github.com/aliesabet</strong>.</p>
+      <div class="social-icons-box">
+        <a href="https://github.com/aliesabet" title="github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ali-sabet-5b973a360/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:alisabet13@yahoo.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/ali_e_sabet" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="tel:+989177529658" title="Phone"><i class="fas fa-phone"></i></a>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 AliESabet. All rights reserved.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
